@@ -1,0 +1,181 @@
+[
+  {
+    "slug": "superb-warfare",
+    "version_number": "0.8.9-final",
+    "filename": "superbwarfare-0.8.9-final-mc1.20.1-6effe4385-all.jar",
+    "url": "https://cdn.modrinth.com/data/Cd3DYqzn/versions/LAITrju0/superbwarfare-0.8.9-final-mc1.20.1-6effe4385-all.jar",
+    "sha1": "3869bd1b156a8eb4db3e1b655ca4705f77be2558",
+    "size": 31691008,
+    "deps": [
+      "8BmcQJ2H",
+      "ordsPcFz",
+      "vvuO3ImH"
+    ]
+  },
+  {
+    "slug": "sbw-vintage-vehicle-pack",
+    "version_number": "0.2.0",
+    "filename": "vvp-beta-1.20.1-0.2.0.jar",
+    "url": "https://cdn.modrinth.com/data/ScHJEcrM/versions/qEek1Ufk/vvp-beta-1.20.1-0.2.0.jar",
+    "sha1": "0c7af7a1b4cf3e06ab90b7eea8d1ac3bb324686f",
+    "size": 26055359,
+    "deps": []
+  },
+  {
+    "slug": "frontline-combat-pack",
+    "version_number": "1.0.1",
+    "filename": "fcp-1.0.1.jar",
+    "url": "https://cdn.modrinth.com/data/TnzHcrvV/versions/cOhUgknX/fcp-1.0.1.jar",
+    "sha1": "e48c740d3f7bf44517895049696b81287962d7c3",
+    "size": 25141010,
+    "deps": []
+  },
+  {
+    "slug": "sbw-headsound",
+    "version_number": "1.0",
+    "filename": "[SBW] HeadSound-1.0-FIX.jar",
+    "url": "https://cdn.modrinth.com/data/wMcdqxDB/versions/NRxNxImH/%5BSBW%5D%20HeadSound-1.0-FIX.jar",
+    "sha1": "0477b6b1f33824290ba88eafd785b877b58a850f",
+    "size": 24374,
+    "deps": []
+  },
+  {
+    "slug": "sbw-wrecked!",
+    "version_number": "1.1.2",
+    "filename": "Wrecked-1.1.2.jar",
+    "url": "https://cdn.modrinth.com/data/lm68uWrO/versions/3a6Fk4AA/Wrecked-1.1.2.jar",
+    "sha1": "10d9af298933ff384b0378bea14a3d30855290ba",
+    "size": 40121,
+    "deps": []
+  },
+  {
+    "slug": "sbw-tracerfire",
+    "version_number": "1.0",
+    "filename": "[SBW] TracerFire-1.0.jar",
+    "url": "https://cdn.modrinth.com/data/7nfwu1hS/versions/W5YpeQky/%5BSBW%5D%20TracerFire-1.0.jar",
+    "sha1": "d1bc511efbb9f3fb3049785eb945e5aee8cf5d45",
+    "size": 18702,
+    "deps": []
+  },
+  {
+    "slug": "sbwdrone-detector",
+    "version_number": "1.0.1",
+    "filename": "drone_detector-1.0.1.jar",
+    "url": "https://cdn.modrinth.com/data/jDFPK38K/versions/V1Z0hBJi/drone_detector-1.0.1.jar",
+    "sha1": "9f45792ebf508e5362d4ef721dd9d971e8e3a5d1",
+    "size": 57179,
+    "deps": [
+      "Cd3DYqzn",
+      "8BmcQJ2H"
+    ]
+  },
+  {
+    "slug": "sbw-remoove-recipe-gun",
+    "version_number": "6",
+    "filename": "mzrk-sbw-remoove-recipe-gun-v6.jar",
+    "url": "https://cdn.modrinth.com/data/znArD7a2/versions/qMvPLqdn/mzrk-sbw-remoove-recipe-gun-v6.jar",
+    "sha1": "436c2faeea8b49558aa20d0a46af7b4691234087",
+    "size": 76061,
+    "deps": [
+      "Cd3DYqzn"
+    ]
+  },
+  {
+    "slug": "sbw-drill,-baby,-drill!",
+    "version_number": "1.2.1",
+    "filename": "DBD-1.2.1.jar",
+    "url": "https://cdn.modrinth.com/data/fBIHe1XK/versions/RyEVsJWp/DBD-1.2.1.jar",
+    "sha1": "902e48bdd6475fa791f9f161e5da91ab329f66a8",
+    "size": 13998,
+    "deps": []
+  },
+  {
+    "slug": "sbw-suppressing",
+    "version_number": "1.0",
+    "filename": "[SBW] Suppressing-1.0.jar",
+    "url": "https://cdn.modrinth.com/data/S8lNiS5Y/versions/TNiO3VwE/%5BSBW%5D%20Suppressing-1.0.jar",
+    "sha1": "e402f146801453d4761488c619fe1e447571a769",
+    "size": 15846,
+    "deps": []
+  },
+  {
+    "slug": "sbw-colorized!",
+    "version_number": "2.0.0",
+    "filename": "Colorized-2.0.0.jar",
+    "url": "https://cdn.modrinth.com/data/bjXJV99e/versions/kU7wIQqN/Colorized-2.0.0.jar",
+    "sha1": "868132f1e78a372e223f4f32e2ff504675d0ca4f",
+    "size": 30051,
+    "deps": [
+      "Cd3DYqzn"
+    ]
+  },
+  {
+    "slug": "sbw-tactical-drone",
+    "version_number": "1.0.83",
+    "filename": "sbw-drone-range-config-1.0.83 Forge 1.20.1.jar",
+    "url": "https://cdn.modrinth.com/data/WG6tgfJf/versions/s86sZ9Kw/sbw-drone-range-config-1.0.83%20Forge%201.20.1.jar",
+    "sha1": "d9ef24bc76138b5b2e08164a2dd2e372f9742b11",
+    "size": 3543471,
+    "deps": []
+  },
+  {
+    "slug": "sbw-more-drone-detector",
+    "version_number": "2.0.2",
+    "filename": "sbw_more_drone_detector-2.0.2-forge-1.20.1.jar",
+    "url": "https://cdn.modrinth.com/data/deMNNAKV/versions/L36Qru5W/sbw_more_drone_detector-2.0.2-forge-1.20.1.jar",
+    "sha1": "e3f60515f78d3157d6d185980296991e9b5e65be",
+    "size": 4711342,
+    "deps": []
+  },
+  {
+    "slug": "sbw-no-pocket-vehicles",
+    "version_number": "1.1.0",
+    "filename": "NPV-1.1.0.jar",
+    "url": "https://cdn.modrinth.com/data/HD2NDPhD/versions/5B5RwVy6/NPV-1.1.0.jar",
+    "sha1": "4df3957d8ba9c5e768feef9dfcea5efff39595d5",
+    "size": 5351,
+    "deps": []
+  },
+  {
+    "slug": "sbw-combined-perk",
+    "version_number": "1.0.0",
+    "filename": "sbw_combined_perk-1.0.0.jar",
+    "url": "https://cdn.modrinth.com/data/BGK8soKH/versions/ERyc5rCz/sbw_combined_perk-1.0.0.jar",
+    "sha1": "65309fd74ef5a1a658b62a53b144b18bfc8333aa",
+    "size": 143573,
+    "deps": [
+      "Cd3DYqzn"
+    ]
+  },
+  {
+    "slug": "sbw-clustermines",
+    "version_number": "1.0",
+    "filename": "sbw_cluster_mines-1.0-0.8.8.jar",
+    "url": "https://cdn.modrinth.com/data/ZMWV1wL1/versions/eBIS5pij/sbw_cluster_mines-1.0-0.8.8.jar",
+    "sha1": "03250f41954cfb84f6c9dceb6f0e5efbe68e6a83",
+    "size": 41166,
+    "deps": []
+  },
+  {
+    "slug": "sbw-survival-recipie-fix-for-addons",
+    "version_number": "1.0.0",
+    "filename": "sbw-addon-recipes-1.0.0.jar",
+    "url": "https://cdn.modrinth.com/data/X4jH33Yz/versions/HuDjqsAH/sbw-addon-recipes-1.0.0.jar",
+    "sha1": "c2347d0b6bac24d09d6859bea9e410051b8e8dab",
+    "size": 66303,
+    "deps": [
+      "Cd3DYqzn",
+      "8BmcQJ2H",
+      "vvuO3ImH"
+    ]
+  },
+  {
+    "slug": "ashvehicle",
+    "version_number": "1.20.1-4.5-8.8",
+    "filename": "ashvehicle-1.20.1-4.5-8.8.jar",
+    "url": "https://cdn.modrinth.com/data/j7CRHkQ6/versions/VTMvZLKV/ashvehicle-1.20.1-4.5-8.8.jar",
+    "sha1": "1124537fbe79f856d104e8d3c8280b978cdfe18a",
+    "size": 18152787,
+    "deps": []
+  }
+]
