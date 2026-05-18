@@ -50,7 +50,17 @@ python3 modpacks/build_pack.py
 构建：
 
 ```bash
-python3 modpacks/build_sbw_pack.py
+python3 modpacks/build_sbw_pack.py        # 输出 113 MiB 完整 zip（gitignore）
+python3 modpacks/split_sbw_pack.py        # 拆分为 partA/partB（各 <100MB，提交到仓库）
 ```
 
-输出 `SuperbWarfare-1.20.1-forge-complete.zip`（~113 MiB）。该文件超过 GitHub 单文件 100MB 限制，未纳入仓库，需要本地运行脚本生成。
+仓库内提供两个分卷 zip（各 < 100MB）：
+
+| 文件 | 大小 | 内容 |
+|------|------|------|
+| `SuperbWarfare-1.20.1-forge-partA-core.zip` | 39 MiB | 主体 + 3 个库 + 12 个小附属 |
+| `SuperbWarfare-1.20.1-forge-partB-content.zip` | 74 MiB | 大型内容包：Vintage Vehicle Pack、Frontline Combat Pack、AshVehicle、More Drone Detector、Tactical Drone |
+
+**安装**：把两个 zip 都解压到同一个游戏目录，让里面的 `mods/` 合并即可。Part A 是核心，Part B 是大型车辆/内容附属。
+
+完整版 `SuperbWarfare-1.20.1-forge-complete.zip`（113 MiB）超过 GitHub 单文件限制，未纳入仓库，可通过 `build_sbw_pack.py` 在本地重建。
