@@ -12,6 +12,12 @@
 
 依赖：Minecraft **1.20.1** + Forge **47.4.20**
 
+## 相对上游的自定义改动
+
+- 移除 `xenon-0.3.31+mc1.20.1.jar` 及其配置（`xenon++.toml`, `xenon-options.json`）
+- 添加 [Embeddium](https://modrinth.com/mod/embeddium) `0.3.31+mc1.20.1`（Sodium 的 Forge 移植，替代 Xenon）
+- 添加 [Chloride（原 Embeddium++）](https://modrinth.com/mod/chloride) `FORGE-mc1.20.1-v1.7.7`（Embeddium 增强插件）
+
 ## 使用方法（完整 zip）
 
 1. 安装 Minecraft 1.20.1 + Forge 47.4.20（用 PCL2 / HMCL / 官方启动器等）。

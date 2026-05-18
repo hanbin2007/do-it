@@ -23,6 +23,33 @@ WORK = Path("/tmp/hammer_build")
 OUT_DIR_NAME = "Hammer-1.19.0-1.20.1-forge"
 OUT_ZIP = Path(f"/home/user/do-it/modpacks/{OUT_DIR_NAME}-complete.zip")
 
+# Mods to remove from the upstream pack (match by jar filename in mods/).
+EXCLUDE_MOD_FILENAMES = {
+    "xenon-0.3.31+mc1.20.1.jar",
+}
+
+# Files inside overrides/ to drop (paths relative to overrides/).
+EXCLUDE_OVERRIDE_PATHS = {
+    "configureddefaults/config/xenon++.toml",
+    "configureddefaults/config/xenon-options.json",
+}
+
+# Extra mods to download and add to mods/. Each entry: (filename, url, sha1, size).
+EXTRA_MODS = [
+    (
+        "embeddium-0.3.31+mc1.20.1.jar",
+        "https://cdn.modrinth.com/data/sk9rgfiA/versions/UTbfe5d1/embeddium-0.3.31%2Bmc1.20.1.jar",
+        "bb2fa8f3e493af16af9160d049f96c614a1faf2f",
+        1320675,
+    ),
+    (
+        "chloride-FORGE-mc1.20.1-v1.7.7.jar",
+        "https://cdn.modrinth.com/data/yD9qW65f/versions/6L0cXWbx/chloride-FORGE-mc1.20.1-v1.7.7.jar",
+        "eb11150bf4029b812f78cf4a3d155b535243d604",
+        956960,
+    ),
+]
+
 
 def sha1_of(p: Path) -> str:
     h = hashlib.sha1()
@@ -73,15 +100,33 @@ def main():
             else:
                 shutil.copy2(item, target)
         print(f"Copied overrides: {[p.name for p in overrides.iterdir()]}")
+        for rel in EXCLUDE_OVERRIDE_PATHS:
+            p = pack_root / rel
+            if p.exists():
+                p.unlink()
+                print(f"  [drop ] override {rel}")
 
     print("Downloading mods...")
+    included_filenames = []
     for f in index["files"]:
         path = f["path"]
+        filename = Path(path).name
+        if filename in EXCLUDE_MOD_FILENAMES:
+            print(f"  [skip ] {filename} (excluded)")
+            continue
         url = f["downloads"][0]
         sha1 = f["hashes"]["sha1"]
         size = f["fileSize"]
         dest = pack_root / path
         download(url, dest, sha1, size)
+        included_filenames.append(filename)
+
+    if EXTRA_MODS:
+        print("Downloading extra mods...")
+        for filename, url, sha1, size in EXTRA_MODS:
+            dest = pack_root / "mods" / filename
+            download(url, dest, sha1, size)
+            included_filenames.append(filename)
 
     info = pack_root / "MODPACK_INFO.txt"
     lines = [
@@ -99,10 +144,18 @@ def main():
         "into your Minecraft instance's game directory (.minecraft or instance folder).",
         "  3) Launch the game with the Forge profile.",
         "",
-        "Mods included:",
+        "Customizations applied to upstream pack:",
     ]
-    for f in sorted(index["files"], key=lambda x: x["path"].lower()):
-        lines.append(f"  - {Path(f['path']).name}")
+    for fn in sorted(EXCLUDE_MOD_FILENAMES):
+        lines.append(f"  - REMOVED  mods/{fn}")
+    for rel in sorted(EXCLUDE_OVERRIDE_PATHS):
+        lines.append(f"  - REMOVED  overrides/{rel}")
+    for filename, _, _, _ in EXTRA_MODS:
+        lines.append(f"  - ADDED    mods/{filename}")
+    lines.append("")
+    lines.append("Mods included:")
+    for fn in sorted(included_filenames, key=str.lower):
+        lines.append(f"  - {fn}")
     info.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
     print(f"Zipping -> {OUT_ZIP}")
