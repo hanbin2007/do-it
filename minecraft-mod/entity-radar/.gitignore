@@ -1,0 +1,14 @@
+# Gradle / build artifacts
+build/
+.gradle/
+run/
+logs/
+*.bak
+
+# IDE
+.idea/
+*.iml
+.eclipse/
+.settings/
+.classpath
+.project
